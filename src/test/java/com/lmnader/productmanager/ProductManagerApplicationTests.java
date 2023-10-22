@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.util.AssertionErrors;
 
 import java.util.Date;
+import java.util.List;
 
 @SpringBootTest
 class ProductManagerApplicationTests {
@@ -44,6 +45,14 @@ class ProductManagerApplicationTests {
 			}
 		} catch (Exception e) {
 			System.out.println("Error: " + e);
+		}
+	}
+
+	@Test
+	public void findAllProducts(){
+		List<Product> products = productRepository.findAll();
+		for (Product product:products) {
+			System.out.println(product);
 		}
 	}
 
