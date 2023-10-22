@@ -1,9 +1,10 @@
 package com.lmnader.productmanager.service;
 
 import com.lmnader.productmanager.model.Product;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public interface ProductService {
     /**
      * Récupère la liste de tous les produits.

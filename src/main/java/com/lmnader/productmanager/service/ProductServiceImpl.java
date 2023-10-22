@@ -2,10 +2,13 @@ package com.lmnader.productmanager.service;
 
 import com.lmnader.productmanager.model.Product;
 import com.lmnader.productmanager.repository.ProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ProductServiceImpl implements ProductService{
+    @Autowired
     ProductRepository productRepository;
     /**
      * Récupère la liste de tous les produits.
