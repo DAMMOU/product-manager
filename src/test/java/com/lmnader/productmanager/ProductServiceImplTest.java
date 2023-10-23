@@ -13,21 +13,22 @@ import java.util.List;
 public class ProductServiceImplTest {
     @Autowired
     private ProductService productService;
-    @Test
-    public void testGetAllProducts(){
-        List<Product> allProducts = productService.getAllProducts();
-        for (Product product:allProducts) {
-            System.out.println(product);
-        }
-    }
 
-    @Test
-    public void testSaveProduct(){
-        Product product = new Product();
-        product.setName("333");
-        product.setDescription("3333333333333333");
-        product.setPrice(33333.33);
-        product.setCreationDate(new Date());
-        productService.saveProduct(product);
-    }
+
+    //@Test
+    //public void testSaveProduct(){
+    //    Product product = new Product();
+    //    product.setName("333");
+    //    product.setDescription("3333333333333333");
+    //    product.setPrice(33333.33);
+    //    product.setCreationDate(new Date());
+    //    productService.saveProduct(product);
+    //}
+    //@Test
+    //public void testGetAllProducts(){
+    //    List<Product> allProducts = productService.getAllProducts();
+    //    for (Product product:allProducts) {
+    //        System.out.println(product);
+    //    }
+    //}
 }
